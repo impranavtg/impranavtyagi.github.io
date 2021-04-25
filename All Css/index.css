@@ -1,0 +1,1134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color:#f6f6f6;
+}
+nav{
+    background-color: #1e2c4c;
+}
+#search_icon{
+    display: none;
+}
+#check_nav{
+    display: flex;
+}
+.navigation{
+    list-style-type: none;
+    overflow: auto;
+    width: 65%;
+    display:flex;
+}
+.navigation li{
+    padding: 2rem 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#searchnav{
+    outline: none;
+    border: none;
+    width:22rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: .8rem;
+    margin-top: .5rem;
+}
+#searchnav:focus{
+    border: .2rem solid;
+    border-color: #04d9ff;
+    box-shadow: 0 0 .8rem 0 #04d9ff;
+    transition-duration: 0.3s;
+}
+
+#search_ul li:first-child{ 
+    padding: 1.7rem 0px 0px 1.5rem;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.navigation li:hover{
+    background-color:#3f8fcd;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#search_div{
+    width: 35%;
+    float: right;
+}
+#search_ul{
+    list-style-type: none;
+    display: flex;
+}
+
+#search_ul li:last-child{
+    background-color:#3f8fcd;
+    height: 3.5rem;
+    padding:.4rem 1rem;
+    border-radius: 1rem;
+    margin: 1.8rem 0px 0px 1.4rem;
+}
+#search_ul li:last-child a{
+    text-decoration: none;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+#search_ul li:last-child:hover{
+    background-color: #41a1eb;
+    transition-duration: 0.4s;
+}
+#logo{
+    text-decoration: none;
+    width:6rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+#logo:hover{
+    opacity: 0.8;
+}
+#tagline{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+#header{
+      background-color: #4c9df6;
+    padding: 1rem;
+    color: white;
+    border-bottom: .2rem solid white;
+    width: 100%;
+}
+nav{
+    width: 100%;
+}
+.login{
+    text-decoration: none;
+    float: right;
+    background-color:#1e2c4c;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: .5rem 2rem 0px 2rem;
+    font-weight: 500;
+    border-radius: .5rem;
+}
+.login:hover{
+    background-color: white;
+    color:#1e2c4c;
+    transition-duration: 0.5s;
+}
+
+
+
+/* Main Heading styling starts */
+
+#main_intro{
+    display:flex;
+}
+#main_intro_img{
+    width: 50%;
+}
+#main_heading{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #f6f6f6;
+}
+#main_heading h1{
+    color:#3c4860;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     position: absolute;
+     bottom: 60%;
+}
+#main_heading h1::selection{
+    background-color:#fbc758 ;
+}
+#main_heading p{
+    color: #4e9bf7 ;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+}
+#main_heading p a{
+    text-decoration: none;
+    color: #4e9bf7 ;
+    padding-left:30%;
+}
+#main_heading p a:hover{
+    color: #fbc758;
+    transition-duration: 0.4s;
+}
+
+#html_div{
+    float: left;
+    padding-left:2rem;
+    width: 50%;
+}
+#css_js_div{
+     clear: left;
+     padding: 0px 0px 1rem 2rem ;
+}
+#img_div{
+    float: left;
+    width: 50%;
+}
+#img_div img{
+    height: auto;
+}
+.headingsall{
+     color:#3c4860;
+     font-size: 3.2rem;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.paragraphall{
+    color:#4e9bf7;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#foot_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c4860;
+    padding: 1rem 0px  ;
+}
+#foot_div p{
+    color: white;
+    font-size: 1.2rem;
+}
+#above_footer{
+    display: flex;
+}
+#above_foot_input{
+    position: relative;
+    width: 50%;
+}
+#above_foot_input h2{
+    position: absolute;
+    top:20%;
+    left: 20%;
+    color: #3c4860;
+    font-size: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#above_foot_input p{
+    position: absolute;
+    top:32%;
+    left: 10%;
+    color: #4e9bf7;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#above_foot_img{
+    width: 50%;
+    padding-left: 10%;
+}
+
+#above_foot_input input{
+    position: absolute;
+    top: 42%;
+    left: 25%;
+    width: 50%;
+    padding: .2rem 1rem;
+    color:#3c4860;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    border:.2rem solid #4e9bf7;
+    border-radius:1rem ;
+}
+#above_foot_input a{
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#4e9bf7;
+    border-radius: 1rem;
+}
+#above_foot_input a:hover{
+    background-color: red;
+    transition-duration: 0.4s;
+}
+#above_foot_input input:focus{
+    border: .2rem solid;
+    border-color: #04d9ff;
+    box-shadow: 0 0 .8rem 0 #04d9ff;
+    transition-duration: 0.2s;
+}
+
+
+
+
+#check_nav input[type="checkbox"]{
+    width: 40px;
+    height: 32px;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+#check_nav input[type="checkbox"]:checked ~ .navigation{
+    display: block;
+}
+.burger_lines{
+    margin-left: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: blue; */
+    width: 40px;
+    height: 32px;
+    z-index: 5;
+}
+.burger_lines .lines{
+    background-color: white;
+    width: 100%;
+    height: 5px;
+}
+
+
+@media(min-width:1514px){
+    html{
+        font-size: 90%;
+    }
+    #main_intro_img img{
+        width: 100%;
+    }
+    #img_div img{
+        width: 100%;
+    }
+    #main_heading  p a{
+        padding-left: 0;
+    }
+    #above_foot_input p{
+        top: 35%;
+    }
+    #above_foot_input input{
+        top: 50%;
+    }
+    #above_foot_input a{
+        top: 65%;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1100px){
+    html{
+        font-size:60% ;
+    }
+}
+@media(max-width:1224px){
+    #main_intro img{
+        width: 40vw;
+    }
+    #main_heading{
+        width: 50vw;
+    }
+    #html_div{
+        width: 40vw;
+    }
+    #img_div{
+        width: 40vw;
+    }
+}
+@media(max-width:1174px){
+    #main_heading p a{
+        padding-left: 0px;
+    }
+}
+@media(min-width:768px) and (max-width:1024px){
+    .navigation li{
+     padding: 2rem 2rem;
+    }
+    #search_ul{
+        width: 10%;
+    }
+        #search_ul li:first-child{
+            margin-top: -.4rem;
+               margin-left: -4.5rem;
+            }
+            #search_ul li:nth-child(2) a i{
+                display: inline-block;
+                margin: 1.6rem 0rem 0rem 1.2rem;
+                font-size: 3rem;
+                color: white;
+            }
+            #search_ul li:last-child{
+                display: none;
+            }
+    #html_div{
+        width: 100%;
+    }
+    
+    #img_div{
+        width: 100%;
+        padding: 0% 20%;
+    }
+    .paragraphall{
+        font-size: 1.6rem;
+    }
+    #img_div img{
+        height: 350px;
+    }
+    #above_foot_img{
+        padding-left: 0%;
+    }
+    #above_foot_img img{
+        width: 90%;
+        height: auto;
+    }
+    #above_foot_input{
+        width: 60%;
+    }
+    #above_foot_input h2{
+        top: 15%;
+        left:0%;
+    }
+    #above_foot_input p{
+        left: 0%;
+        font-size: 1.7rem;
+    }
+    #above_foot_input a{
+        top: 68%;
+        left: 35%;
+        background-color: red;
+    }
+    #above_foot_input input{
+        top: 50%;
+        width: 60%;
+        left: 20%;
+    }
+
+    #main_intro_img{
+        padding-right: 0px;
+        width: 80%;
+        /* height: 100%; */
+    }
+    #main_intro div img{
+         width: 80%;
+    }
+    #main_heading{
+        width: 60%;
+        margin-left: -17%;
+    }
+    #main_heading h1{
+        left: 0%;
+        font-size: 3.3rem;
+    }
+    #main_heading p{
+        top: 45%;
+        font-size: 1.8rem;
+    }
+}
+@media(min-width:970px) and (max-width:1024px){
+    #search_ul li:nth-child(2){
+        display: none;
+    }
+    #search_ul li:last-child{
+        display: inline-block;
+    }
+    #above_foot_input h2{
+        top: 15%;
+        left:0%;
+        font-size: 4.5rem;
+    }
+    #above_foot_input p{
+        left: 0%;
+        font-size: 2.3rem;
+    }
+    #above_foot_input a{
+        top: 65%;
+        left: 30%;
+        background-color: red;
+    }
+    #above_foot_input input{
+        top: 50%;
+        width: 70%;
+        left: 10%;
+        height: 4rem;
+    }
+}
+@media(min-width:800px) and (max-width:900px) {
+    #above_foot_input h2{
+        top: 15%;
+        left:0%;
+        font-size: 4rem;
+    }
+    #above_foot_input p{
+        left: 0%;
+        font-size: 2rem;
+    }
+    #above_foot_input a{
+        top: 68%;
+        left: 35%;
+    }
+    #above_foot_input input{
+        top: 50%;
+        width: 70%;
+        left: 20%;
+    }
+}
+@media(min-width:900px) and (max-width:970px) {
+    .navigation li{
+        padding: 2rem 3rem;
+    }
+    #above_foot_input h2{
+        top: 15%;
+        left:0%;
+        font-size: 4rem;
+    }
+    #above_foot_input p{
+        left: 0%;
+        font-size: 2.1rem;
+    }
+    #above_foot_input a{
+        top: 68%;
+        left: 35%;
+    }
+    #above_foot_input input{
+        top: 50%;
+        width: 60%;
+        left: 20%;
+    }
+}
+
+@media(min-width:360px) and (max-width:409px) {
+    #check_nav input[type="checkbox"]{
+        display: block;
+        margin: 10px 20px;
+    }
+    .burger_lines{
+        margin-left: -60px;
+        margin-top: 10px;
+    }
+    #check_nav input[type="checkbox"]:checked ~ .navigation{
+        display: inline-block;
+    }
+    .navigation{
+        width: 100%;
+        display: none;
+        z-index: 20;
+    }
+    #search_ul li {
+        display: none;
+    }
+    #main_intro{
+        flex-wrap: wrap;
+    }
+    #main_intro_img{
+        width: 100%;
+        height: 200px;
+        padding-left: 12%;
+    }
+    #main_intro_img img{
+        width: 80%;
+    }
+    #main_heading{
+        width: 100%;
+        height: 150px;
+    }
+    #main_heading h1{
+        font-size: 3rem;
+        bottom: 70%;
+    }
+    #main_heading p{
+        font-size: 2rem;
+        bottom: 10%;
+        left: 5%;
+    }
+    #img_div{
+        display: none;
+    }
+    #above_foot_img{
+        padding: 0%;
+        width: 30%;
+    }
+    #above_foot_img img{
+        width: 100%;
+    }
+    #above_foot_input h2{
+        top: 0%;
+        left: 0%;
+        font-size: 1.85rem;
+    }
+    #above_foot_input p{
+        display: none;
+    }
+    #above_foot_input input{
+        width: 200px;
+        height: 26px;
+        padding: .1rem 1rem;
+        font-size: 2rem;
+        top: 30%;
+        left: 1%;
+        border-radius: .7rem;
+    }
+    #above_foot_input a{
+        top: 65%;
+        left: 30%;
+        font-size: 1.5rem;
+        background-color: red;
+    }
+    #html_div{
+        width: 100%;
+        padding-right: .5rem;
+    }
+    #css_js_div{
+        padding-right: .5rem;
+    }
+    .headingsall{
+        font-size: 2.5rem;
+    }
+    .paragraphall{
+        font-size: 1.5rem;
+    }
+    #tagline{
+        display: none;
+    }
+}
+
+@media(min-width:409px) and (max-width:500px) {
+    #check_nav input[type="checkbox"]{
+        display: block;
+        margin: 10px 20px;
+    }
+    .burger_lines{
+        margin-left: -60px;
+        margin-top: 10px;
+    }
+    #check_nav input[type="checkbox"]:checked ~ .navigation{
+        display: inline-block;
+    }
+    .navigation{
+        width: 100%;
+        display: none;
+        z-index: 20;
+    }
+    #search_ul li {
+        display: none;
+    }
+    #main_intro{
+        flex-wrap: wrap;
+    }
+    #main_intro_img{
+        width: 100%;
+        height: 200px;
+        padding-left: 20%;
+    }
+    #main_intro_img img{
+        width: 70%;
+    }
+    #main_heading{
+        width: 100%;
+        height: 150px;
+    }
+    #main_heading h1{
+        font-size: 3rem;
+        bottom: 70%;
+    }
+    #main_heading p{
+        font-size: 2rem;
+        bottom: 10%;
+        left: 5%;
+    }
+    #img_div{
+        display: none;
+    }
+    #above_foot_img{
+        /* border: 2px solid red; */
+        padding: 0%;
+        width: 30%;
+    }
+    #above_foot_img img{
+        width: 100%;
+    }
+    #above_foot_input h2{
+        top: 2%;
+        left: 5%;
+        font-size: 2rem;
+    }
+    #above_foot_input p{
+        display: none;
+    }
+    #above_foot_input input{
+        width: 200px;
+        height: 26px;
+        padding: .1rem 1rem;
+        font-size: 2rem;
+        top: 30%;
+        left: 8%;
+        border-radius: .7rem;
+    }
+    #above_foot_input a{
+        top: 60%;
+        left: 30%;
+        font-size: 1.5rem;
+        background-color: red;
+    }
+    #html_div{
+        width: 100%;
+        padding-right: .5rem;
+    }
+    #css_js_div{
+        padding-right: .5rem;
+    }
+    .headingsall{
+        font-size: 2.5rem;
+    }
+    .paragraphall{
+        font-size: 1.5rem;
+    }
+    #tagline{
+        display: none;
+    }
+}
+
+@media(min-width:500px) and (max-width:600px) {
+    #check_nav input[type="checkbox"]{
+        display: block;
+        /* opacity: 100%; */
+        margin: 10px 20px;
+    }
+    .burger_lines{
+        margin-left: -60px;
+        margin-top: 10px;
+    }
+    #check_nav input[type="checkbox"]:checked ~ .navigation{
+        display: inline-block;
+    }
+    /* nav{
+        height: 50px;
+    } */
+    .navigation{
+        width: 100%;
+        display: none;
+        z-index: 20;
+    }
+    #search_ul li {
+        display: none;
+    }
+    #main_intro{
+        flex-wrap: wrap;
+    }
+    #main_intro_img{
+        /* display: none; */
+        width: 100%;
+        height: 200px;
+        padding-left: 25%;
+    }
+    #main_intro_img img{
+        width: 70%;
+    }
+    #main_heading{
+        /* border: 2px solid red; */
+        margin-top: 1.7rem;
+        width: 100%;
+        height: 150px;
+    }
+    #main_heading h1{
+        font-size: 3rem;
+        bottom: 50%;
+    }
+    #main_heading p{
+        font-size: 1.7rem;
+        bottom: 5%;
+        left: 5%;
+    }
+    #img_div{
+        display: none;
+    }
+    #above_foot_img{
+        /* border: 2px solid red; */
+        padding: 0%;
+        width: 30%;
+    }
+    #above_foot_img img{
+        width: 100%;
+    }
+    #above_foot_input h2{
+        top: 2%;
+        left: 6%;
+        font-size: 2.4rem;
+    }
+    #above_foot_input p{
+        display: none;
+    }
+    #above_foot_input input{
+        width: 200px;
+        height: 26px;
+        padding: .1rem 1rem;
+        font-size: 2rem;
+        top: 30%;
+        left: 15%;
+        border-radius: .7rem;
+    }
+    #above_foot_input a{
+        top: 55%;
+        left: 30%;
+        font-size: 1.5rem;
+        background-color: red;
+    }
+    #html_div{
+        width: 100%;
+        padding-right: .5rem;
+    }
+    #css_js_div{
+        padding-right: .5rem;
+    }
+    .headingsall{
+        font-size: 2.5rem;
+    }
+    .paragraphall{
+        font-size: 1.5rem;
+    }
+    #tagline{
+        display: none;
+    }
+}
+@media(min-width:600px) and (max-width:650px) {
+    #check_nav input[type="checkbox"]{
+        display: block;
+        /* opacity: 100%; */
+        margin: 10px 20px;
+    }
+    .burger_lines{
+        margin-left: -60px;
+        margin-top: 10px;
+    }
+    #check_nav input[type="checkbox"]:checked ~ .navigation{
+        display: inline-block;
+    }
+    /* nav{
+        height: 50px;
+    } */
+    .navigation{
+        width: 100%;
+        display: none;
+        z-index: 20;
+    }
+    #search_ul li {
+        display: none;
+    }
+    #main_intro{
+        flex-wrap: wrap;
+    }
+    #main_intro_img{
+        /* display: none; */
+        width: 100%;
+        height: 200px;
+        padding-left: 25%;
+    }
+    #main_intro_img img{
+        width: 70%;
+    }
+    #main_heading{
+        /* border: 2px solid red; */
+        margin-top: 3.5rem;
+        width: 100%;
+        height: 150px;
+    }
+    #main_heading h1{
+        font-size: 3rem;
+        bottom: 50%;
+    }
+    #main_heading p{
+        font-size: 2rem;
+        bottom: 10%;
+        left: 5%;
+    }
+    #img_div{
+        display: none;
+    }
+    #above_foot_img{
+        /* border: 2px solid red; */
+        padding: 0%;
+        width: 40%;
+    }
+    #above_foot_img img{
+        width: 100%;
+    }
+    #above_foot_input h2{
+        top: 12%;
+        left: 2%;
+        font-size: 3rem;
+    }
+    #above_foot_input p{
+        display: none;
+    }
+    #above_foot_input input{
+        width: 250px;
+        height: 35px;
+        padding: .1rem 1rem;
+        font-size: 2rem;
+        top: 35%;
+        left: 10%;
+        border-radius: .7rem;
+    }
+    #above_foot_input a{
+        top: 60%;
+        left: 35%;
+        font-size: 1.7rem;
+        background-color: red;
+    }
+    #html_div{
+        width: 100%;
+        padding-right: .5rem;
+    }
+    #css_js_div{
+        padding-right: .5rem;
+    }
+    .headingsall{
+        font-size: 2.5rem;
+    }
+    .paragraphall{
+        font-size: 1.5rem;
+    }
+    #tagline{
+        display: none;
+    }
+}
+
+
+@media(min-width:650px) and (max-width:767px) {
+    #check_nav input[type="checkbox"]{
+        display: block;
+        /* opacity: 100%; */
+        margin: 10px 20px;
+    }
+    .burger_lines{
+        margin-left: -60px;
+        margin-top: 10px;
+    }
+    #check_nav input[type="checkbox"]:checked ~ .navigation{
+        display: inline-block;
+    }
+    /* nav{
+        height: 50px;
+    } */
+    .navigation{
+        width: 100%;
+        display: none;
+        z-index: 20;
+    }
+    #search_ul li {
+        display: none;
+    }
+    #main_intro{
+        flex-wrap: wrap;
+    }
+    #main_intro_img{
+        /* display: none; */
+        width: 100%;
+        height: 200px;
+        padding-left: 20%;
+    }
+    #main_intro_img img{
+        width: 80%;
+    }
+    #main_heading{
+        /* border: 2px solid red; */
+        margin-top: 15rem;
+        width: 100%;
+        height: 150px;
+    }
+    #main_heading h1{
+        font-size: 3.5rem;
+        bottom: 60%;
+    }
+    #main_heading p{
+        font-size: 2.2rem;
+        bottom: 10%;
+        left: 5%;
+    }
+    #img_div{
+        display: none;
+    }
+    #above_foot_img{
+        /* border: 2px solid red; */
+        padding: 0%;
+        width: 50%;
+    }
+    #above_foot_img img{
+        width: 100%;
+    }
+    #above_foot_input h2{
+        top: 17%;
+        left: 2%;
+        font-size: 3rem;
+    }
+    #above_foot_input p{
+        display: none;
+    }
+    #above_foot_input input{
+        width: 250px;
+        height: 35px;
+        padding: .1rem 1rem;
+        font-size: 2rem;
+        top: 35%;
+        left: 10%;
+        border-radius: .7rem;
+    }
+    #above_foot_input a{
+        top: 52%;
+        left: 30%;
+        font-size: 1.9rem;
+        background-color: red;
+    }
+    #html_div{
+        width: 100%;
+        padding-right: .5rem;
+    }
+    #css_js_div{
+        padding-right: .5rem;
+    }
+    .headingsall{
+        font-size: 2.8rem;
+    }
+    .paragraphall{
+        font-size: 1.8rem;
+    }
+    #tagline{
+        display: none;
+    }
+}
+
+
+
+@media(max-width:359px){
+    #check_nav input[type="checkbox"]{
+        display: block;
+        /* opacity: 100%; */
+        margin: 10px 20px;
+    }
+    .burger_lines{
+        margin-left: -60px;
+        margin-top: 10px;
+    }
+    #check_nav input[type="checkbox"]:checked ~ .navigation{
+        display: inline-block;
+    }
+    #tagline{
+        display: none;
+    }
+    .navigation{
+        width: 100%;
+        display: none;
+        z-index: 20;
+    }
+    #search_ul li {
+        display: none;
+    }
+
+    #main_intro{
+        width: 100%;
+         margin-top: 5rem;
+    }
+    #main_intro_img img{
+        display: none;
+    }
+    #main_heading{
+        /* margin-left: -18rem; */
+        padding-right:100% ;
+        width: 100%;
+        height: 15rem;
+    }
+    #main_heading h1{
+        font-size: 2.5rem;
+        left: 10%;
+    }
+    #main_heading p{
+        font-size: 1.4rem;
+        top: 50%;
+        left: 3%;
+    }
+
+    #html_div{
+        width: 100%;
+    }
+    #css_js_div{
+        width: 100%;
+    }
+    .headingsall{
+        font-size: 2rem;
+    }
+    .paragraphall{
+        font-size: 1.5rem;
+    }
+    #img_div img{
+        display: none;
+    }
+    #above_footer{
+        /* border: 2px solid red; */
+        padding-right: 20%;
+        height: 15rem;
+    }
+    #above_foot_img img{
+        display: none;
+    }
+    #above_foot_input{
+        /* border: 2px solid red; */
+        width: 100rem;
+    }
+    #above_foot_input h2{
+        font-size: 2rem;
+        top: 10%;
+        left: 0%;
+    }
+    #above_foot_input p{
+        display: none;
+    }
+    #above_foot_input input{
+        width: 100%;
+        height: 3rem;
+        font-size: 1.2rem;
+        top:50% ;
+        left: 0%;
+    }
+    #above_foot_input a{
+        top: 75%;
+        left: 30%;
+        background-color: red;
+        font-size: 1.5rem;
+    }
+    .login{
+        font-size: 1.5rem;
+        margin: .5rem 1rem .5rem .0rem;
+    }
+}
+
+@media(max-width:240px){#main_intro{
+        margin-top: 5rem;
+    }
+    .login{
+        margin: .5rem .5rem .5rem .0rem;
+        font-size: 1.5rem;
+    }
+}

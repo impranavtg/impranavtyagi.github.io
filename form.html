@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="All Css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Sign up</title>
+</head>
+<body>
+    
+    <header>
+        <div id="header">
+        <a href="index.html" target="blank"> <img src="Images/Tg.jpg" alt="Logo" id="logo"> </a>
+        <p id="tagline">Pranav Tyagi</p>
+        <a href="login.html" class="login">Log in</a>
+        <a href="form.html" class="login">Sign up</a>
+    </div>
+     </header>
+         <nav>
+
+                    <div id="check_nav">
+                        <input type="checkbox" name="hamburger" id="checkburger">
+                        <div class="burger_lines">
+                            <span class="lines" class="line1"></span>
+                            <span class="lines" class="line2"></span>
+                            <span class="lines" class="line3"></span>
+                        </div>
+
+             <ul class="navigation">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="about us.html">About</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+                 <li><a href="contactus.html">Contact Us</a></li>
+                 </ul>
+                 <div id="search_div">
+                 <ul id="search_ul">
+                 <li><input type="text" placeholder="Search here" id="searchnav"></li>
+                 <li><a href="#"><i class="fa fa-search" id="search_icon"></i></a></li>
+                 <li><a href="#">Search</a></li>
+                </ul>
+            </div>
+            </div>
+            </div>
+         </nav>
+   
+    <div id="maindiv">
+        <h1> Sign up Form: </h1>
+    <form action="Backend.php">
+      <div id="Backform">
+        <div id="ulA">
+           <input type="text" id="YourName" class="input" placeholder="Your Name"> 
+            <br>
+         <input type="datetime" id="YourDOB" class="input" placeholder="DOB">   
+        <input type="number" id="YourNumber" class="input" placeholder="Mobile Number">   
+        <br>
+        <input type="email" id="YourEmail" class="input" placeholder="Email">   
+        <br>
+        <input type="password" id="YourPassword" class="input" placeholder="Password">   
+                <br>
+     <input type="radio" name="YourGender" id="YourGender"> <label id="mal" class="gen">Male</label> <input type="radio" name="YourGender" id="YourGender"> <label class="gen">Female</label>
+        <input type="radio" name="YourGender" id="YourGender"> <label class="gen">Other</label>
+        <br>
+        </div>
+        <div id="belowinput_form">
+            <a href="https://www.youtube.com" target="blank" id="term"> Terms & Conditions </a>
+            <br>
+           <p class="gen" id="agree"> Agree: </p> <input type="checkbox" id="YourAgreement">
+        <br>
+        <button class="Button"> Submit Now </button>
+       <input type="reset" value="Reset Form" id="reset">
+    </div>
+    </div>
+    </form>
+</div>
+</body>
+</html>

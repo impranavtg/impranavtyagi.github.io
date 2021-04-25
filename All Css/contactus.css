@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url('../Images/backcontact.jpg');
+    background-size: cover;
+    
+}
+nav{
+    background-color: #1e2c4c;
+}
+#search_icon{
+    display: none;
+}
+#check_nav{
+    display: flex;
+}
+.navigation{
+   
+    list-style-type: none;
+    overflow: auto;
+    width: 65%;
+    display:flex;
+   
+}
+.navigation li{
+    padding: 2rem 5rem;
+    /* float: left; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#searchnav{
+    outline: none;
+    border: none;
+    width:22rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: .8rem;
+    margin-top: .5rem;
+}
+#searchnav:focus{
+    border: .2rem solid;
+    border-color: #04d9ff;
+    box-shadow: 0 0 .8rem 0 #04d9ff;
+    transition-duration: 0.3s;
+}
+
+#search_ul li:first-child{ 
+  
+    padding: 1.7rem 0px 0px 1.5rem;
+  
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.navigation li:hover{
+    background-color:#3f8fcd;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#search_div{
+    
+    width: 35%;
+    float: right;
+}
+#search_ul{
+    list-style-type: none;
+    display: flex;
+}
+
+#search_ul li:last-child{
+    background-color:#3f8fcd;
+    height: 3.5rem;
+    padding:.4rem 1rem;
+    border-radius: 1rem;
+    margin: 1.8rem 0px 0px 1.4rem;
+}
+#search_ul li:last-child a{
+    text-decoration: none;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+#search_ul li:last-child:hover{
+    background-color: #41a1eb;
+    transition-duration: 0.4s;
+}
+#logo{
+    text-decoration: none;
+    width:6rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+#logo:hover{
+    opacity: 0.8;
+}
+#tagline{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+#header{
+    
+      background-color: #4c9df6;
+    padding: 1rem;
+    color: white;
+    border-bottom: .2rem solid white;
+    
+    width: 100%;
+}
+nav{
+    width: 100%;
+}
+.login{
+    text-decoration: none;
+    float: right;
+    background-color:#1e2c4c;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: .5rem 2rem 0px 2rem;
+    font-weight: 500;
+    border-radius: .5rem;
+}
+.login:hover{
+    background-color: white;
+    color:#1e2c4c;
+    transition-duration: 0.5s;
+}
+
+#check_nav input[type="checkbox"]{
+    width: 40px;
+    height: 32px;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+#check_nav input[type="checkbox"]:checked ~ .navigation{
+    display: block;
+}
+.burger_lines{
+    margin-left: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 40px;
+    height: 32px;
+    z-index: 5;
+}
+.burger_lines .lines{
+    background-color: white;
+    width: 100%;
+    height: 5px;
+}
+
+
+#maindiv{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .5rem solid white;
+    border-radius: 1rem;
+}
+
+#Cus{
+    position: relative;
+    width: 70rem;
+    
+    height: 50rem;
+
+    background-image: url('../Images/white-abstract-background_23-2148844575.jpg');
+    border-radius: 4rem;
+}
+#Cus h1{
+    position: absolute;
+    top: 5%;
+    left: 38%;
+    
+    width: 20rem;
+    font-size:3.2rem;
+   
+    color:#fcb600;
+    text-decoration: underline;
+}
+#nameCus{
+    position: absolute;
+    border: 2px solid rgb(180, 180, 180);
+    width: 30rem;
+    height: 4rem;
+    top: 20%;
+  
+    left: 30%;
+  
+    border-radius: 2rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    outline: none;
+    background-color: white;
+    color: black;
+
+}
+
+ #emailCus{
+    border: 2px solid rgb(180, 180, 180);
+    position: absolute;
+    width: 30rem;
+    height: 4rem;
+    left: 30%;
+    top: 32%;
+    
+    border-radius: 2rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    outline: none;
+    background-color:white;
+    color: black;
+}
+#textareaCus{
+    border: 2px solid rgb(180, 180, 180);
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    resize: none;
+    border-radius: 2rem;
+    width: 40rem;
+   
+    height: 20rem;
+    outline: none;
+    background-color:white;
+    color: black;
+    font-size: 2rem;
+    padding-left: 1rem;
+} 
+.inputname_email_textarea:focus{
+    border-color: #ffbb01;
+    box-shadow: 0 0 15px 0 #ffbb01;
+    transition-duration: 0.3s;
+}
+
+#subCus{
+    background-color:#ffbb01;
+    position: absolute;
+    top: 88%;
+    left: 45%;
+    padding:.5rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: white;
+   
+}
+#subCus:hover{
+    background-color: #ffa601;
+}
+
+
+@media(min-width:768px) and (max-width:1024px){
+    .navigation li{
+     padding: 2rem 2rem;
+    }
+    #search_ul{
+        width: 10%;
+    }
+        #search_ul li:first-child{
+            margin-top: -.4rem;
+               margin-left: -4.5rem;
+            }
+            #search_ul li:nth-child(2) a i{
+                display: inline-block;
+                margin: 1.6rem 0rem 0rem 1.2rem;
+                font-size: 3rem;
+                color: white;
+            }
+            #search_ul li:last-child{
+                display: none;
+            }
+
+           
+            #nameCus{
+                width: 30rem;
+                left: 30%;
+            }
+            #emailCus{
+                width: 30rem;
+                left: 30%;
+            }
+            #subCus{
+                background-color:#ffbb01;
+                position: absolute;
+                top: 89%;
+                left: 42%;
+            }
+            
+        }
+
+        @media(min-width:970px) and (max-width:1024px){
+            #search_ul li:nth-child(2){
+                display: none;
+            }
+            #search_ul li:last-child{
+                display: inline-block;
+            }
+            #Cus{
+               
+                height: 60rem;
+            }
+            #Cus h1{
+                top: 5%;
+                left: 40%;
+                width: 20rem;
+                font-size:3.2rem;
+            }
+            #nameCus{
+                width: 32rem;
+                left: 30%;
+            }
+            #emailCus{
+                width: 32rem;
+                left: 30%;
+            }
+            #textareaCus{
+                left: 26%;
+                top: 45%;
+                width: 40rem;
+            } 
+            #subCus{
+                background-color:#ffbb01;
+                position: absolute;
+                top: 82%;
+                left: 44%;
+            }
+        }
+
+        @media(min-width:900px) and (max-width:970px) {
+            .navigation li{
+                padding: 2rem 3rem;
+            }
+          
+        }
+
+        @media(min-width:360px) and (max-width:409px) {
+            #check_nav input[type="checkbox"]{
+                display: block;
+              
+                margin: 10px 20px;
+            }
+            .burger_lines{
+                margin-left: -60px;
+                margin-top: 10px;
+            }
+            #check_nav input[type="checkbox"]:checked ~ .navigation{
+                display: inline-block;
+            }
+            
+            .navigation{
+                width: 100%;
+                display: none;
+                z-index: 20;
+            }
+            #search_ul li {
+                display: none;
+            }
+            #tagline{
+                display: none;
+            }
+
+            #Cus{
+                width: 30rem;
+                height: 35rem;
+            }
+            #Cus h1{
+                left: 25%;
+                font-size: 2.5rem;
+                text-decoration: none;
+            }
+            #nameCus{
+                width: 20rem;
+                height: 3rem;
+                left: 15%;
+                font-size: 1.5rem;
+            }
+            #emailCus{
+                width: 20rem;
+                height: 3rem;
+                top: 32%;
+                left: 15%;
+                font-size: 1.5rem;
+            }
+            #textareaCus{
+                left: 12%;
+                top: 44%;
+                width: 22rem;
+                height: 12rem;
+                font-size: 1.5rem;
+            } 
+            #subCus{
+                top: 85%;
+                left: 34%;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media(min-width:409px) and (max-width:500px) {
+            #check_nav input[type="checkbox"]{
+                display: block;
+                
+                margin: 10px 20px;
+            }
+            .burger_lines{
+                margin-left: -60px;
+                margin-top: 10px;
+            }
+            #check_nav input[type="checkbox"]:checked ~ .navigation{
+                display: inline-block;
+            }
+           
+            .navigation{
+                width: 100%;
+                display: none;
+                z-index: 20;
+            }
+            #search_ul li {
+                display: none;
+            }
+            #tagline{
+                display: none;
+            }
+
+            #Cus{
+                width: 35rem;
+                height: 35rem;
+            }
+            #Cus h1{
+                left: 30%;
+                font-size: 2.5rem;
+                text-decoration: none;
+            }
+            #nameCus{
+                width: 20rem;
+                height: 3rem;
+                left: 20%;
+                font-size: 1.5rem;
+            }
+            #emailCus{
+                width: 20rem;
+                height: 3rem;
+                top: 32%;
+                left: 20%;
+                font-size: 1.5rem;
+            }
+            #textareaCus{
+                left: 17%;
+                top: 44%;
+                width: 22rem;
+                height: 12rem;
+                font-size: 1.5rem;
+            } 
+            #subCus{
+                top: 85%;
+                left: 39%;
+                font-size: 1.5rem;
+            }
+        }
+
+
+        @media(min-width:500px) and (max-width:600px) {
+            #check_nav input[type="checkbox"]{
+                display: block;
+                
+                margin: 10px 20px;
+            }
+            .burger_lines{
+                margin-left: -60px;
+                margin-top: 10px;
+            }
+            #check_nav input[type="checkbox"]:checked ~ .navigation{
+                display: inline-block;
+            }
+           
+            .navigation{
+                width: 100%;
+                display: none;
+                z-index: 20;
+            }
+            #search_ul li {
+                display: none;
+            }
+            #tagline{
+                display: none;
+            }
+
+            #Cus{
+                width: 40rem;
+                height: 35rem;
+            }
+            #Cus h1{
+                left: 35%;
+                font-size: 2.5rem;
+                text-decoration: none;
+            }
+            #nameCus{
+                width: 20rem;
+                height: 3rem;
+                left: 25%;
+                font-size: 1.5rem;
+            }
+            #emailCus{
+                width: 20rem;
+                height: 3rem;
+                top: 32%;
+                left: 25%;
+                font-size: 1.5rem;
+            }
+            #textareaCus{
+                left: 22%;
+                top: 44%;
+                width: 22rem;
+                height: 12rem;
+                font-size: 1.5rem;
+            } 
+            #subCus{
+                top: 85%;
+                left: 44%;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media(min-width:600px) and (max-width:650px) {
+            #check_nav input[type="checkbox"]{
+                display: block;
+                
+                margin: 10px 20px;
+            }
+            .burger_lines{
+                margin-left: -60px;
+                margin-top: 10px;
+            }
+            #check_nav input[type="checkbox"]:checked ~ .navigation{
+                display: inline-block;
+            }
+           
+            .navigation{
+                width: 100%;
+                display: none;
+                z-index: 20;
+            }
+            #search_ul li {
+                display: none;
+            }
+            #tagline{
+                display: none;
+            }
+
+            #Cus{
+                width: 45rem;
+                height: 35rem;
+            }
+            #Cus h1{
+                left: 40%;
+                font-size: 2.5rem;
+                text-decoration: none;
+            }
+            #nameCus{
+                width: 20rem;
+                height: 3rem;
+                left: 30%;
+                font-size: 1.5rem;
+            }
+            #emailCus{
+                width: 20rem;
+                height: 3rem;
+                top: 32%;
+                left: 30%;
+                font-size: 1.5rem;
+            }
+            #textareaCus{
+                left: 27%;
+                top: 44%;
+                width: 22rem;
+                height: 12rem;
+                font-size: 1.5rem;
+            } 
+            #subCus{
+                top: 85%;
+                left: 49%;
+                font-size: 1.5rem;
+            }
+        }
+
+
+        @media(min-width:650px) and (max-width:767px) {
+            #check_nav input[type="checkbox"]{
+                display: block;
+                
+                margin: 10px 20px;
+            }
+            .burger_lines{
+                margin-left: -60px;
+                margin-top: 10px;
+            }
+            #check_nav input[type="checkbox"]:checked ~ .navigation{
+                display: inline-block;
+            }
+            
+            .navigation{
+                width: 100%;
+                display: none;
+                z-index: 20;
+            }
+            #search_ul li {
+                display: none;
+            }
+            #tagline{
+                display: none;
+            }
+
+            #Cus{
+                width: 50rem;
+                height: 35rem;
+            }
+            #Cus h1{
+                left: 41%;
+                font-size: 2.5rem;
+                text-decoration: none;
+            }
+            #nameCus{
+                width: 20rem;
+                height: 3rem;
+                left: 33%;
+                font-size: 1.5rem;
+            }
+            #emailCus{
+                width: 20rem;
+                height: 3rem;
+                top: 32%;
+                left: 33%;
+                font-size: 1.5rem;
+            }
+            #textareaCus{
+                left: 31%;
+                top: 44%;
+                width: 22rem;
+                height: 12rem;
+                font-size: 1.5rem;
+            } 
+            #subCus{
+                top: 85%;
+                left: 46%;
+                font-size: 1.5rem;
+            }
+        }
+
+
+        @media (max-width:359px){
+            #check_nav input[type="checkbox"]{
+                display: block;
+                
+                margin: 10px 20px;
+            }
+            .burger_lines{
+                margin-left: -60px;
+                margin-top: 10px;
+            }
+            #check_nav input[type="checkbox"]:checked ~ .navigation{
+                display: inline-block;
+            }
+            #tagline{
+                display: none;
+            }
+            .navigation{
+                width: 100%;
+                display: none;
+                z-index: 20;
+            }
+            #search_ul li {
+                display: none;
+            }
+            .login{
+                font-size: 1.5rem;
+                margin: .5rem 1rem .5rem .0rem;
+            }
+
+            #Cus{
+                width:80%;
+                height: 30rem;
+            }
+            #Cus h1{
+                left: 24%;
+                font-size: 2rem;
+                text-decoration: none;
+            }
+            #nameCus{
+                width: 17rem;
+                height: 2.3rem;
+                left: 10%;
+                font-size: 1.5rem;
+            }
+            #emailCus{
+                width: 17rem;
+                height: 2.3rem;
+                top: 32%;
+                left: 10%;
+                font-size: 1.5rem;
+            }
+            #textareaCus{
+                left: 10%;
+                top: 44%;
+                width: 17rem;
+                height: 10rem;
+                font-size: 1.5rem;
+            } 
+            #subCus{
+                top: 85%;
+                left: 31%;
+                font-size: 1.5rem;
+            }
+        }
+
+        
+        @media(max-width:240px){
+            .login{
+                margin: .5rem .5rem .5rem .0rem;
+                font-size: 1.5rem;
+            }
+            #maindiv{
+                border: none;
+            }
+            #Cus{
+                width: 100%;
+                height: 100vh;
+                border-radius: 0;
+            }
+            #Cus h1{
+                top: 10%;
+                left: 20%;
+                font-size: 2.2rem;
+                text-decoration: none;
+            }
+            #nameCus{
+                width: 15rem;
+                height: 2.2rem;
+                left: 12%;
+                font-size: 1.2rem;
+            }
+            #emailCus{
+                width: 15rem;
+                height: 2.2rem;
+                top: 27%;
+                left: 12%;
+                font-size: 1.2rem;
+            }
+            #textareaCus{
+                left: 7%;
+                top: 35%;
+                width:20rem;
+                height: 8rem;
+                font-size: 1.2rem;
+            } 
+            #subCus{
+                top: 60%;
+                left: 30%;
+                font-size: 1.2rem;
+            }
+        }    
+
+        @media (min-width:1441px){
+            html{
+                font-size: 80%;
+            }
+        }
+        @media(min-width:1504px){
+            html{
+                font-size: 87%;
+            }
+        }
