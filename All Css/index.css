@@ -1134,6 +1134,9 @@ nav{
 }
 
 @media(max-width:767px){
+    .headingsall{
+        margin-bottom: .5rem;
+    }
     .paragraphall{
         font-weight: 400;
     }

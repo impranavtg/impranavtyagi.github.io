@@ -653,6 +653,9 @@ h1{
             #ulA input label{
                 font-size: 1.5rem;
             }
+            .gen{
+                font-size: 1.7rem;
+            }
         }
 
         @media(max-width:240px){
